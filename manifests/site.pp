@@ -7,6 +7,7 @@ node 'vm01.linuxmaster.com' {
         content => "This is a test server.\n",
     }
     include sshd
+    include vim_upgrade
 }
 
 node /^vm[0-9]+\.linuxmaster\.com$/ {
